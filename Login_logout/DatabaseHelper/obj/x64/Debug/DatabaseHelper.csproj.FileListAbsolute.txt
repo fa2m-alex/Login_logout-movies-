@@ -1,0 +1,7 @@
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\bin\x64\Debug\DatabaseHelper.dll
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\bin\x64\Debug\DatabaseHelper.pdb
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\obj\x64\Debug\DatabaseHelper.csprojResolveAssemblyReference.cache
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\obj\x64\Debug\DatabaseHelper.dll
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\obj\x64\Debug\DatabaseHelper.pdb
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\bin\x64\Debug\Tables.dll
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\DatabaseHelper\bin\x64\Debug\Tables.pdb

@@ -1,0 +1,10 @@
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\bin\Debug\Login_logout.exe.config
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\bin\Debug\Login_logout.exe
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\bin\Debug\Login_logout.pdb
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.csprojResolveAssemblyReference.cache
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.Form1.resources
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.Properties.Resources.resources
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.csproj.GenerateResource.Cache
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.exe
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.pdb
+C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Login_logout\obj\Debug\Login_logout.Main.resources
