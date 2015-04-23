@@ -16,7 +16,7 @@ namespace DatabaseHelper
 
         private void ConnectTo()
         {
-            connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.15.0;Data Source=C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Database.accdb;Persist Security Info=False");
+            connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.15.0;Data Source=C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Database.accdb;Persist Security Info=False");
             command = connection.CreateCommand();
         }
 

@@ -500,7 +500,7 @@
             this.printPreviewControl1.Name = "printPreviewControl1";
             this.printPreviewControl1.Size = new System.Drawing.Size(100, 100);
             this.printPreviewControl1.TabIndex = 43;
-            this.printPreviewControl1.Click += new System.EventHandler(this.printPreviewControl1_Click);
+            //this.printPreviewControl1.Click += new System.EventHandler(this.printPreviewControl1_Click);
             // 
             // MoviesList
             // 
