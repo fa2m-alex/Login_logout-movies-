@@ -37,6 +37,10 @@ namespace Login_logout
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            ResetCombo();
+           
+
             temp = comboBox1.SelectedItem as Movie;
 
             double avRating = 0;
@@ -89,6 +93,16 @@ namespace Login_logout
 
            
 
+        }
+
+        private void ResetCombo()
+        {
+            comboDir.ResetText();
+            comboAct.ResetText();
+            comboEd.ResetText();
+            comboPro.ResetText();
+            comboOp.ResetText();
+            comboComp.ResetText();
         }
 
         private void UpdateStars()

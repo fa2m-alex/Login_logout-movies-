@@ -25,6 +25,21 @@ namespace Login_logout
             UpdateGenres();
             UpdateStudios();
             UpdateStars();
+
+            StartValuses();
+        }
+
+        private void StartValuses()
+        {
+            txtTitle.Text = "";
+            txtYear.Text = "0";
+            txtDuration.Text = "0";
+            txtKinoPoisk.Text = "0";
+            txtImdb.Text = "0";
+            txtMetacritic.Text = "0";
+            txtRotTom.Text = "0";
+            txtAge.Text = "0";
+
         }
 
         private void btnAddMovie_Click(object sender, EventArgs e)
@@ -58,38 +73,12 @@ namespace Login_logout
                 db.AddMovieStudio(db.getMovies().Last(), s);
             }
 
-            /*
-            foreach (Star s in chBoxDirectors.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "director");
-            }
+            StartValuses();
 
-            foreach (Star s in chBoxActors.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "actor");
-            }
-
-            foreach (Star s in chBoxProducers.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "producer");
-            }
-
-            foreach (Star s in chBoxOperators.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "operator");
-            }
-
-            foreach (Star s in chBoxEditors.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "editor");
-            }
-
-            foreach (Star s in chBoxComposers.CheckedItems)
-            {
-                db.AddParticularMovie(db.getMovies().Last(), s, "composer");
-            }*/
+           
 
             MessageBox.Show("Movie has been added");
+            //StartValuses();
 
         }
 

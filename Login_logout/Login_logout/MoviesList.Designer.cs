@@ -70,7 +70,6 @@
             this.btnDelOp = new System.Windows.Forms.Button();
             this.btnDelEd = new System.Windows.Forms.Button();
             this.btnDelComp = new System.Windows.Forms.Button();
-            this.printPreviewControl1 = new System.Windows.Forms.PrintPreviewControl();
             this.chooseMov.SuspendLayout();
             this.movInfo.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -494,20 +493,11 @@
             this.btnDelComp.UseVisualStyleBackColor = true;
             this.btnDelComp.Click += new System.EventHandler(this.btnDelComp_Click);
             // 
-            // printPreviewControl1
-            // 
-            this.printPreviewControl1.Location = new System.Drawing.Point(112, 411);
-            this.printPreviewControl1.Name = "printPreviewControl1";
-            this.printPreviewControl1.Size = new System.Drawing.Size(100, 100);
-            this.printPreviewControl1.TabIndex = 43;
-            //this.printPreviewControl1.Click += new System.EventHandler(this.printPreviewControl1_Click);
-            // 
             // MoviesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 483);
-            this.Controls.Add(this.printPreviewControl1);
             this.Controls.Add(this.btnDelComp);
             this.Controls.Add(this.btnDelEd);
             this.Controls.Add(this.btnDelOp);
@@ -587,7 +577,6 @@
         private System.Windows.Forms.Button btnDelOp;
         private System.Windows.Forms.Button btnDelEd;
         private System.Windows.Forms.Button btnDelComp;
-        private System.Windows.Forms.PrintPreviewControl printPreviewControl1;
 
     }
 }

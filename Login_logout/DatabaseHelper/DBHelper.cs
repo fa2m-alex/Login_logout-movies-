@@ -146,7 +146,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT * FROM Countries";
+                command.CommandText = "SELECT * FROM Countries ORDER BY Country_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -181,7 +181,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT * FROM Genres";
+                command.CommandText = "SELECT * FROM Genres ORDER BY Genre_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -240,7 +240,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT Country_name FROM Movie_and_country WHERE id_movie = " + m.Id;
+                command.CommandText = "SELECT Country_name FROM Movie_and_country WHERE id_movie = " + m.Id + " ORDER BY Country_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -321,7 +321,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT Genre_name FROM Movie_and_genre WHERE id_movie = " + m.Id;
+                command.CommandText = "SELECT Genre_name FROM Movie_and_genre WHERE id_movie = " + m.Id + " ORDER BY Genre_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -355,7 +355,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT * FROM Studios";
+                command.CommandText = "SELECT * FROM Studios ORDER BY Studio_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -413,7 +413,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT Studio_name FROM Movie_and_studio WHERE id_movie = " + m.Id;
+                command.CommandText = "SELECT Studio_name FROM Movie_and_studio WHERE id_movie = " + m.Id + " ORDER BY Studio_name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -875,7 +875,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT movie_id, Title, Year FROM User_and_movie, Movie WHERE [id_movie] = [movie_id] AND [user_login] = '" + u.Login + "'";
+                command.CommandText = "SELECT movie_id, Title, Year FROM User_and_movie, Movie WHERE [id_movie] = [movie_id] AND [user_login] = '" + u.Login + "' ORDER BY Title";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -946,7 +946,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT * FROM Star";
+                command.CommandText = "SELECT * FROM Star ORDER BY Name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -1061,7 +1061,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT movie_id, Title, Year FROM Particular_movie, Movie WHERE [id_movie] = [movie_id] AND [id_star] = " + star.Id;
+                command.CommandText = "SELECT movie_id, Title, Year FROM Particular_movie, Movie WHERE [id_movie] = [movie_id] AND [id_star] = " + star.Id + " ORDER BY Title";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -1162,7 +1162,7 @@ namespace DatabaseHelper
 
             try
             {
-                command.CommandText = "SELECT star_id, Name, Second_name, Career_date, Birthday, Born_place FROM User_and_star, Star WHERE [id_star] = [star_id] AND [user_login] = '" + user.Login + "'";
+                command.CommandText = "SELECT star_id, Name, Second_name, Career_date, Birthday, Born_place FROM User_and_star, Star WHERE [id_star] = [star_id] AND [user_login] = '" + user.Login + "' ORDER BY Name";
                 command.CommandType = CommandType.Text;
                 connection.Open();
 
@@ -1272,6 +1272,31 @@ namespace DatabaseHelper
             try
             {
                 command.CommandText = "DELETE FROM Particular_movie WHERE id_movie=" + m.Id + " AND id_star=" + s.Id + " AND [Type_of_star]= '" + type + "'";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        public void InsertAverage(Movie m, double avRating)
+        {
+            try
+            {
+
+                command.CommandText = "UPDATE Movie SET " +
+                    "[Average_rating] = '" + avRating + "' WHERE movie_id = " + m.Id;
                 command.CommandType = CommandType.Text;
                 connection.Open();
 

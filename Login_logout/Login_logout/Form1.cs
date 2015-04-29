@@ -46,7 +46,7 @@ namespace Login_logout
                         txtLogin.Text = "";
                         txtPassword.Text = "";
                     }
-                    else if (db.getUsers().ToArray()[i].Equals("user"))
+                    else if (db.getUsers().ToArray()[i].Type.Equals("user"))
                     {
                         Main main = new Main(db.getUsers().ToArray()[i]);
                         main.Show();
