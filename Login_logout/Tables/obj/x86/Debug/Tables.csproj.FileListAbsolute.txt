@@ -1,0 +1,5 @@
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\bin\x86\Debug\Tables.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\bin\x86\Debug\Tables.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x86\Debug\Tables.csprojResolveAssemblyReference.cache
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x86\Debug\Tables.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x86\Debug\Tables.pdb

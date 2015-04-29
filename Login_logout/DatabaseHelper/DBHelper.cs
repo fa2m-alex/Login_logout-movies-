@@ -16,7 +16,7 @@ namespace DatabaseHelper
 
         private void ConnectTo()
         {
-            connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.15.0;Data Source=C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Database.accdb;Persist Security Info=False");
+            connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Database.accdb;Persist Security Info=False");
             command = connection.CreateCommand();
         }
 
@@ -1313,6 +1313,47 @@ namespace DatabaseHelper
                     connection.Close();
                 }
             }
+        }
+
+        public List<User> Query1()
+        {
+            List<User> personsList = new List<User>();
+
+            try
+            {
+                command.CommandText = "SELECT DISTINCT (Login) AS Users " +
+                    "FROM Users, User_and_movie " +
+                    "WHERE (((Users.[Login])=[user_login]) AND ((User_and_movie.[Rating])<5) AND ((User_and_movie.[id_movie]) In (SELECT movie_id " +
+                    "FROM Movie WHERE RottenTomatoes > 89)))";
+                command.CommandType = CommandType.Text;
+                connection.Open();
+
+                OleDbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    User s = new User();
+                    //s.Id = Convert.ToInt32(reader["user_id"].ToString());
+                    s.Login = reader["Users"].ToString();
+                    //s.Password = reader["Password"].ToString();
+                    //s.Type = reader["Type"].ToString();
+
+                    personsList.Add(s);
+                }
+
+                return personsList;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection != null)
+                {
+                    connection.Close();
+                }
+            }
+
         }
     }
 }

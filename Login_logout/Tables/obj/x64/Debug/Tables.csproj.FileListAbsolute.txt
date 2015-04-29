@@ -3,3 +3,8 @@ C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logou
 C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Tables\obj\x64\Debug\Tables.csprojResolveAssemblyReference.cache
 C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Tables\obj\x64\Debug\Tables.dll
 C:\Users\alexf_000\Dropbox\Навчання\ІІІ рік\VS2012Proj\Login_logout\Tables\obj\x64\Debug\Tables.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\bin\x64\Debug\Tables.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\bin\x64\Debug\Tables.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x64\Debug\Tables.csprojResolveAssemblyReference.cache
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x64\Debug\Tables.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Tables\obj\x64\Debug\Tables.pdb

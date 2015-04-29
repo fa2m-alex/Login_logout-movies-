@@ -19,6 +19,8 @@ namespace Login_logout
         public AddStarPanel()
         {
             InitializeComponent();
+
+            StartValues();
         }
 
         private void btnAddStar_Click(object sender, EventArgs e)
@@ -34,8 +36,17 @@ namespace Login_logout
             db.AddStar(star);
 
             MessageBox.Show("Star has been added");
+            StartValues();
         }
 
+        private void StartValues()
+        {
+            txtName.Text = "";
+            txtSecondName.Text = "";
+            txtBirthday.Text = "";
+            txtCareer.Text = "";
+            txtPlace.Text = "";
+        }
 
     }
 }

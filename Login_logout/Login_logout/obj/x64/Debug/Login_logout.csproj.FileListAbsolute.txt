@@ -73,3 +73,4 @@ C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logo
 C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Login_logout\bin\x64\Debug\Tables.dll
 C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Login_logout\bin\x64\Debug\DatabaseHelper.pdb
 C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Login_logout\bin\x64\Debug\Tables.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\Login_logout\obj\x64\Debug\Login_logout.Query1.resources

@@ -1,0 +1,7 @@
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\bin\x86\Debug\DatabaseHelper.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\bin\x86\Debug\DatabaseHelper.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\bin\x86\Debug\Tables.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\bin\x86\Debug\Tables.pdb
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\obj\x86\Debug\DatabaseHelper.csprojResolveAssemblyReference.cache
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\obj\x86\Debug\DatabaseHelper.dll
+C:\Users\alexf_000\OneDrive\Temp_GitHub_Projects\Login_logout-movies-\Login_logout\DatabaseHelper\obj\x86\Debug\DatabaseHelper.pdb

@@ -41,7 +41,7 @@ namespace Login_logout
             }
 
             lblAvRating.Text = "Average rating: " + avRating;
-
+            db.InsertAverage(temp , avRating);
 
 
             /****************************/

@@ -19,6 +19,8 @@ namespace Login_logout
 
         private User user;
 
+        double avRating = 0;
+
         public MoviesListForUser(User newUser)
         {
             InitializeComponent();
@@ -51,7 +53,7 @@ namespace Login_logout
         {
             temp = comboBox1.SelectedItem as Movie;
 
-            double avRating = 0;
+            
 
             /**************************/
             if (db.CountRatingsForMovie(temp) > 0)
@@ -60,6 +62,7 @@ namespace Login_logout
             }
 
             lblAvRating.Text = "Average rating: " + avRating;
+            db.InsertAverage(temp, avRating);
 
           
             
@@ -124,6 +127,12 @@ namespace Login_logout
             db.DeleteUserMovie(m, user);
 
             db.AddUserMovie(m, user, rate);
+
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -136,6 +145,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -148,6 +162,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -160,6 +179,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -172,6 +196,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -184,6 +213,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -196,6 +230,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -208,6 +247,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -220,6 +264,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 
@@ -232,6 +281,11 @@ namespace Login_logout
 
             db.DeleteUserMovie(m, user);
             db.AddUserMovie(m, user, rate);
+            if (db.CountRatingsForMovie(temp) > 0)
+            {
+                avRating = db.getAvRatingForMovie(temp);
+            }
+            db.InsertAverage(m, avRating);
             UpdateMovies();
         }
 

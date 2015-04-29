@@ -36,6 +36,7 @@
             this.btnStars = new System.Windows.Forms.Button();
             this.btnMyMovies = new System.Windows.Forms.Button();
             this.btnMovies = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnChangePass);
             this.groupBox1.Controls.Add(this.btnMyStars);
             this.groupBox1.Controls.Add(this.btnStars);
@@ -67,7 +69,7 @@
             this.groupBox1.Controls.Add(this.btnMovies);
             this.groupBox1.Location = new System.Drawing.Point(65, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 177);
+            this.groupBox1.Size = new System.Drawing.Size(589, 177);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User Menu";
@@ -122,11 +124,21 @@
             this.btnMovies.UseVisualStyleBackColor = true;
             this.btnMovies.Click += new System.EventHandler(this.btnMovies_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(230, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(329, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Користувачі, які поставили високі оцінки поганим фільмам";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 258);
+            this.ClientSize = new System.Drawing.Size(727, 258);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label);
             this.Controls.Add(this.btnLogOut);
@@ -151,5 +163,6 @@
         private System.Windows.Forms.Button btnMyMovies;
         private System.Windows.Forms.Button btnMovies;
         private System.Windows.Forms.Button btnChangePass;
+        private System.Windows.Forms.Button button1;
     }
 }

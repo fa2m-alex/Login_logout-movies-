@@ -139,6 +139,12 @@ namespace Login_logout
         {
             ChangePassPanel cpp = new ChangePassPanel(user);
             cpp.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Query1 q = new Query1();
+            q.Show();
         }  
 
         
